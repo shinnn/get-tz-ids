@@ -1,0 +1,50 @@
+{
+  "name": "get-tz-ids",
+  "version": "1.0.0",
+  "description": "Get an array of time zone IDs from IANA time zone database",
+  "repository": "shinnn/get-tz-ids",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --config @shinnn/node index.js test.js",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "request",
+    "get",
+    "fetch",
+    "extract",
+    "parse",
+    "latest",
+    "tz",
+    "time",
+    "zone",
+    "zones",
+    "timezone",
+    "timezones",
+    "list",
+    "data",
+    "database",
+    "iana",
+    "id",
+    "identifier",
+    "identifiers",
+    "alphabetical"
+  ],
+  "dependencies": {
+    "alpha-sort": "^1.0.2",
+    "get-tz": "^1.0.0"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^2.0.0",
+    "array-duplicated": "^1.0.1",
+    "eslint": "^2.12.0",
+    "istanbul": "^0.4.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}
